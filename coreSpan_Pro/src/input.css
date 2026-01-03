@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+      font-family: 'Roboto', sans-serif;
+}
+
+.partner-marque {
+  display: flex;
+  width: max-content;
+  animation: marquee 125s linear infinite;
+}
+
+.marquee-track {
+  display: flex;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.btn {
+  min-width: 27%;
+  height: 90px;
+  border-radius: 16px;
+  background: #E0DBFF;
+  color: #9173ef;
+  flex-shrink: 0;
+  font-size: 22px;
+}
+
+.btn.active {
+  background-color: #4F39F6;
+  color: white;
+}
+
+.slider-wrapper {
+  overflow: hidden;
+}
+
+#btnTrack {
+  display: flex;
+  justify-content: flex-end;
+}
