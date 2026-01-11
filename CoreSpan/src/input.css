@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+      font-family: 'Roboto', sans-serif;
+}
+
+.partner-marque {
+  display: flex;
+  width: max-content;
+  animation: marquee 125s linear infinite;
+}
+
+.marquee-track {
+  display: flex;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+#btnTrack {
+  display: flex;
+  gap: 16px;
+  width: max-content;
+}
+
+.relative {
+  overflow: hidden; 
+}
+
+button.arrow {
+  background: white;
+  z-index: 10;
+  padding: 10px; 
+  border-radius: 50%;
+}
+
+/* dropdown hover */
+#dropdown:hover {
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(2px);
+}
+
+
