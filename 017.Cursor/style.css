@@ -56,5 +56,6 @@ div.cursor{
   height: 15px;
   background: yellow;
   border-radius: 50%;
-  text-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
 }
